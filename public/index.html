@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Cube Controller</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="viewport"></div>
+
+    <aside id="controls">
+      <h2>Cube Control Panel</h2>
+
+      <label>Rotation speed: <span id="speedVal">1.0</span> rad/s</label>
+      <input id="speedSlider" type="range" min="0" max="5" step="0.1" value="1">
+
+      <div id="directional">
+        <button id="up">↑</button>
+        <div>
+          <button id="left">←</button>
+          <button id="down">↓</button>
+          <button id="right">→</button>
+        </div>
+      </div>
+
+      <div id="actions">
+        <button id="resetBtn">Reset</button>
+        <button id="saveBtn">Save Current State</button>
+      </div>
+
+      <div id="status"></div>
+    </aside>
+  </div>
+
+  <!-- Three.js (minified) and GLTFLoader -->
+  <script src="https://unpkg.com/three@0.157.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.157.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
