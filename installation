@@ -1,0 +1,13 @@
+1.Clone the repo
+  git clone https://github.com/your-username/frame-next-cube.git
+  cd frame-next-cube
+
+2.Install dependencies
+  npm install
+
+3.Configure environment
+  PORT=3000
+  MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/frame_next_cube?retryWrites=true&w=majority&appName=Cluster0
+
+4.Run the server
+  npm run dev
